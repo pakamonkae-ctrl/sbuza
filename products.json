@@ -7,7 +7,7 @@
     "moodLabel": "Fresh · สดชื่น",
     "weight": "100g",
     "price": 129,
-    "image": "images/soap-mint.jpg",
+    "image": "imagessoap-mint.jpeg",
     "description": "ฟองนุ่มโปร่งสบาย ให้ความเย็นสดชื่นเหมือนเดินออกจากสปา ชำระล้างความมันและเหงื่อไคลให้ผิวสะอาดตื่นตัว"
   },
   {
@@ -18,7 +18,7 @@
     "moodLabel": "Gentle · อ่อนโยน",
     "weight": "100g",
     "price": 139,
-    "image": "images/soap-oat.jpg",
+    "image": "imagessoap-oat.jpeg",
     "description": "กลิ่นหอมละมุนอบอุ่น ผสานสารสกัดข้าวโอ๊ตช่วยปลอบประโลมและคงความชุ่มชื้น ให้ผิวนุ่มเนียนไม่แห้งตึง"
   },
   {
@@ -29,7 +29,7 @@
     "moodLabel": "Deep Clean · ล้ำลึก",
     "weight": "100g",
     "price": 149,
-    "image": "images/soap-cedar.jpg",
+    "image": "imagessoap-cedar.jpeg",
     "description": "กลิ่นไม้หอมสุขุมนุ่มลึก ผสานผงถ่านชาร์โคลช่วยดูดซับสิ่งสกปรกและความมันส่วนเกินอย่างล้ำลึก"
   },
   {
@@ -40,7 +40,7 @@
     "moodLabel": "Romance · หวานละมุน",
     "weight": "100g",
     "price": 149,
-    "image": "images/soap-rose.jpg",
+    "image": "imagessoap-rose.jpeg",
     "description": "ความหอมหวานนุ่มลึกของกลีบกุหลาบผสานน้ำผึ้งธรรมชาติ บำรุงผิวให้เปล่งปลั่งเนียนนุ่มชวนหลงใหล"
   }
 ]
