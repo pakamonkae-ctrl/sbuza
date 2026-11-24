@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ระบบจัดการและแพ็คสินค้า — ละมุนสบู่ (LAMUN SOAP)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">LAMUN SOAP</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+        <a href="admin.html" aria-current="page">แพ็คสินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head is-center">
+          <h1>หยิบสินค้า แพ็ค และจ่าหน้าพัสดุ</h1>
+          <div class="heading-rule" aria-hidden="true"></div>
+          <p>คลิกเลือกรายการในตารางด้านล่างเพื่อออกใบหยิบสินค้าและใบจ่าหน้าพัสดุ</p>
+        </div>
+
+        <!-- กล่องใบหยิบสินค้า + ใบจ่าหน้าพัสดุ -->
+        <div class="fulfillment-panel">
+          <div class="fulfillment-panel__head">
+            <h2 style="font-size: 1.4rem; margin: 0;">เอกสารเตรียมจัดส่ง (Pick, Pack & Shipping Label)</h2>
+            <button type="button" id="printLabelBtn" class="btn btn--small">พิมพ์ใบหยิบ / ใบจ่าหน้า</button>
+          </div>
+          <div id="fulfillmentDetail" class="fulfillment-grid">
+            <p class="lead">ยังไม่มีคำสั่งซื้อ กรุณาทดลองสั่งซื้อสินค้าจากหน้าสินค้าก่อนครับ</p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="section-head">
+          <h2 style="font-size: 1.5rem;">รายการคำสั่งซื้อทั้งหมด</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>เลขออเดอร์</th>
+                <th>วันเวลา</th>
+                <th>SKU / สินค้า</th>
+                <th>จำนวน</th>
+                <th>ยอดรวม</th>
+                <th>ชื่อผู้รับ</th>
+                <th>เบอร์โทร</th>
+                <th>ที่อยู่จัดส่ง</th>
+                <th>จัดการ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">LAMUN SOAP</span>
+      <p style="margin: 0 auto;">© 2026 ละมุนสบู่ (Lamun Soap)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

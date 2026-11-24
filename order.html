@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>สั่งซื้อสินค้า — ละมุนสบู่ (LAMUN SOAP)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">LAMUN SOAP</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+        <a href="admin.html">แพ็คสินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head is-center">
+          <h1>สั่งซื้อสินค้า</h1>
+          <div class="heading-rule" aria-hidden="true"></div>
+          <p>กรอกข้อมูลผู้รับเพื่อบันทึกคำสั่งซื้อลง Google Sheets และเตรียมจัดส่ง</p>
+        </div>
+
+        <div class="order-box">
+          <form id="orderForm">
+            <div class="form-field">
+              <label for="skuSelect">สูตรสบู่ (SKU)</label>
+              <select id="skuSelect" name="sku" required>
+                <option value="SOAP-MINT-100|สบู่ยูคาลิปตัสมิ้นต์|129">SOAP-MINT-100 — สบู่ยูคาลิปตัสมิ้นต์ (100g) — 129 บาท</option>
+                <option value="SOAP-OAT-100|สบู่น้ำนมข้าวโอ๊ต|139">SOAP-OAT-100 — สบู่น้ำนมข้าวโอ๊ต (100g) — 139 บาท</option>
+                <option value="SOAP-CEDAR-100|สบู่ซีดาร์วูดชาร์โคล|149">SOAP-CEDAR-100 — สบู่ซีดาร์วูดชาร์โคล (100g) — 149 บาท</option>
+                <option value="SOAP-ROSE-100|สบู่กุหลาบน้ำผึ้ง|149">SOAP-ROSE-100 — สบู่กุหลาบน้ำผึ้ง (100g) — 149 บาท</option>
+              </select>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="qty">จำนวน (ก้อน)</label>
+                <input type="number" id="qty" name="qty" min="1" value="1" required>
+              </div>
+              <div class="form-field">
+                <label for="total">ยอดเงินรวม (บาท)</label>
+                <input type="number" id="total" name="total" min="0" readonly required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="customerName">ชื่อ-นามสกุล ผู้รับ</label>
+              <input type="text" id="customerName" name="customerName" autocomplete="name" required>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="phone">เบอร์โทร / Line</label>
+                <input type="text" id="phone" name="phone" autocomplete="tel" required>
+              </div>
+              <div class="form-field">
+                <label for="postalCode">รหัสไปรษณีย์</label>
+                <input type="text" id="postalCode" name="postalCode" maxlength="5" placeholder="เช่น 12130" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="address">ที่อยู่จัดส่งโดยละเอียด</label>
+              <textarea id="address" name="address" placeholder="บ้านเลขที่ หมู่/ซอย ถนน ตำบล อำเภอ จังหวัด" required></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="note">หมายเหตุเพิ่มเติม (ถ้ามี)</label>
+              <input type="text" id="note" name="note" placeholder="เช่น ฝากวางไว้หน้าบ้าน / ห่อของขวัญ">
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn btn--primary">ยืนยันสั่งซื้อ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="brand">LAMUN SOAP</span>
+      <p style="margin: 0 auto;">© 2026 ละมุนสบู่ (Lamun Soap)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
